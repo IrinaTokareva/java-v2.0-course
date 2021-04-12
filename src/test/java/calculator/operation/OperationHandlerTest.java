@@ -73,5 +73,6 @@ public class OperationHandlerTest {
             e = ex;
         }
         Assert.assertTrue(e instanceof OperationNotSupportedException);
+        Assert.assertEquals("Unsupported operation: unknown", e.getMessage());
     }
 }
